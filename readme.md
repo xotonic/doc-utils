@@ -1,5 +1,7 @@
 # Сборка скриптов для генерации отчетов + LaTeX заготовка
 
+## Сбор всего исходного кода в docx
+
 `src-to-doc.py` - рекурсивно конвертирует исходники в папке в docx. Требуется Pandoc.
 
 Чтобы узнать подробнее:
@@ -7,14 +9,20 @@
 py src-to-doc.py -h
 ```
 
-`src-to-latex-listings.py` - генерирует ссылки на файлы исходного кода для Latex (через  пакет `listings`). Предазначен для `lab-report.tex`. Просто выводит готовый код LaTeX
+## Вставка исходного кода в tex файл
 
+Положение кода в файле определяется кодовым комметнарием `%code%`
 
-`lab-report.tex` - отчет по лабораторной на LaTeX
+Пример
+```
+python make.py -i lab-report.tex -o lab.pdf -d ../sample-source/ -p *.java
+```
+
+### Windows
 
 Используется связка MikTeX 2.9 + Sublime Text 3 + LaTeXTools (плагин для ST3)
 
-## Для Ubuntu
+### Ubuntu
 
 Вместо MikTex
 
@@ -24,4 +32,4 @@ sudo apt install texlive-lang-cyrillic
 fmtutil --all
 sudo apt install latexmk
 ```
-Работать так же в Sublime text
+Работать так же в Sublime text или как в примере выше
