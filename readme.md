@@ -13,3 +13,15 @@ py src-to-doc.py -h
 `lab-report.tex` - отчет по лабораторной на LaTeX
 
 Используется связка MikTeX 2.9 + Sublime Text 3 + LaTeXTools (плагин для ST3)
+
+## Для Ubuntu
+
+Вместо MikTex
+
+```bash
+sudo apt install texlive-xetex
+sudo apt install texlive-lang-cyrillic
+fmtutil --all
+sudo apt install latexmk
+```
+Работать так же в Sublime text

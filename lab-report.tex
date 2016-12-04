@@ -4,8 +4,8 @@
 \usepackage{lmodern}
 % Задаем шрифты
 \usepackage{fontspec}
-\setmainfont[Scale=1.4]{Times New Roman} % Главный шрифт
-\setmonofont[Scale=1.4]{Consolas} % Моноширинный шрифт
+\setmainfont[Scale=1.4]{FreeSerif} % Главный шрифт
+\setmonofont[Scale=1.4]{Ubuntu Mono} % Моноширинный шрифт
 
 % Поддержка русского языка (переносов, орфографии)
 \usepackage{polyglossia}
@@ -63,7 +63,7 @@
 \vspace{\fill}
 {\bfseries \Large Лабораторная работа № 2}
 
-{\itshape по дисциплине "Современные информационные технологии"}
+{\itshape по дисциплине <<Современные информационные технологии>>}
 
 на тему "Разработка графического интерфейса. 
 Классы-коллекции.
@@ -121,7 +121,7 @@
 
 \item Добавить в программу главное в меню и панель инструментов, в которых продублировать основные команды вашего интерфейса пользователя;
 
-\item При остановке симуляции должно появляться модальное диалоговое окно (при условии, что оно разрешено) с информацией о количестве и типе сгенерированных объектов, а также времени симуляции. Вся информация выводится в элементе TextArea, недоступном для редактирования. В диалоговом окне должно быть 2 кнопки: <<ОК>> и <<Отмена>>. При нажатии на <<ОК>> симуляции останавливается, а при нажатии на "Отмена", соответственно продолжается;
+\item При остановке симуляции должно появляться модальное диалоговое окно (при условии, что оно разрешено) с информацией о количестве и типе сгенерированных объектов, а также времени симуляции. Вся информация выводится в элементе TextArea, недоступном для редактирования. В диалоговом окне должно быть 2 кнопки: <<ОК>> и <<Отмена>>. При нажатии на <<ОК>> симуляции останавливается, а при нажатии на <<Отмена>>, соответственно продолжается;
 
 \item Предусмотреть проверку данных вводимых пользователем. При вводе неверного значения обрабатывать исключительную ситуацию: выставлять значение по умолчанию и выводить диалоговое окно с сообщением об ошибке;
 \item Реализовать следующие элементы управления:
@@ -134,33 +134,7 @@
 
 \section*{Приложение А. Листинг программы}
 
-
-\lstinputlisting[title=\large{DrawPanel.java}]{./sample-source/sit/DrawPanel.java}
-\lstinputlisting[title=\large{Form.java}]{./sample-source/sit/Form.java}
-\lstinputlisting[title=\large{MenuView.java}]{./sample-source/sit/MenuView.java}
-\lstinputlisting[title=\large{ResourceId.java}]{./sample-source/sit/ResourceId.java}
-\lstinputlisting[title=\large{SideBarView.java}]{./sample-source/sit/SideBarView.java}
-\lstinputlisting[title=\large{SimulationTimer.java}]{./sample-source/sit/SimulationTimer.java}
-\lstinputlisting[title=\large{Statistic.java}]{./sample-source/sit/Statistic.java}
-\lstinputlisting[title=\large{StatisticDialog.java}]{./sample-source/sit/StatisticDialog.java}
-\lstinputlisting[title=\large{ToolBarView.java}]{./sample-source/sit/ToolBarView.java}
-\lstinputlisting[title=\large{FactorySettings.java}]{./sample-source/sit/settings/FactorySettings.java}
-\lstinputlisting[title=\large{SettingsController.java}]{./sample-source/sit/settings/SettingsController.java}
-\lstinputlisting[title=\large{SettingsModel.java}]{./sample-source/sit/settings/SettingsModel.java}
-\lstinputlisting[title=\large{SettingsView.java}]{./sample-source/sit/settings/SettingsView.java}
-\lstinputlisting[title=\large{BasicBehavior.java}]{./sample-source/sit/vehicle/BasicBehavior.java}
-\lstinputlisting[title=\large{Behavior.java}]{./sample-source/sit/vehicle/Behavior.java}
-\lstinputlisting[title=\large{Bike.java}]{./sample-source/sit/vehicle/Bike.java}
-\lstinputlisting[title=\large{BikeFactory.java}]{./sample-source/sit/vehicle/BikeFactory.java}
-\lstinputlisting[title=\large{Car.java}]{./sample-source/sit/vehicle/Car.java}
-\lstinputlisting[title=\large{CarFactory.java}]{./sample-source/sit/vehicle/CarFactory.java}
-\lstinputlisting[title=\large{Factory.java}]{./sample-source/sit/vehicle/Factory.java}
-\lstinputlisting[title=\large{Habitat.java}]{./sample-source/sit/vehicle/Habitat.java}
-\lstinputlisting[title=\large{Painter.java}]{./sample-source/sit/vehicle/Painter.java}
-\lstinputlisting[title=\large{SimpleHabitat.java}]{./sample-source/sit/vehicle/SimpleHabitat.java}
-\lstinputlisting[title=\large{TimedLuckyFactory.java}]{./sample-source/sit/vehicle/TimedLuckyFactory.java}
-\lstinputlisting[title=\large{Vehicle.java}]{./sample-source/sit/vehicle/Vehicle.java}
-
+%code%
 
 \section*{Вывод}
 Произошло ознакомление с особенностями технологии Java и была изучена часть синтаксиса языка Java. Была разработана программа для упрощенной имитации поведения объектов.
